@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Portoflio | Benjamin</title>
+ 
+
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">Benjamin</a>
+
+    <nav>
+      <a href="index.html" class="active"> Home</a>
+      <a href="aboutme.html">About me</a>
+      <a href="mywork.html">My work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <section class="home">
+    <div class="home-img">
+      <img src="/bilder/bakrunn_submit.png" alt="">
+    </div>
+    <div class="home-content"> <!--  forklaring -->
+      <h1>Hello, i am  <span>Benjamin</span></h1>
+      <h3 class="typing-text">im a <span></span></h3>
+      <p class="tekst22">My name is Benjamin Bring Mohn, i am an 16 year old developer. I am currently learning the code lauange Html and CSS</p>
+
+      <div class="social-icons">
+        <a href="https://www.instagram.com/sniben22/"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <a href="contact.html" class="btn">Hire me</a>
+    </div>
+
+    <button id="toggleDyslexic" style="position: absolute; top: 10px; left: 10px;">Dysletic mode</button>    
+    <script src="toggleDyslexic.js"></script>
+<script>
+                const button = document.getElementById('toggleDyslexic');
+                button.addEventListener('click', () => {
+                    document.body.classList.toggle('dyslexic');
+                });
+            </script>
+
+  </section>
+
+  
+  <footer>
+    <h1 class="copyright">Ⓒ All rights reserved 2025. Benjamin Bring Mohn</h1>
+  </footer>
+
+
+</body>
+
+</html>

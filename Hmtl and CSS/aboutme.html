@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Benjamin</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="./aboutme.html" class="active">About me</a>
+            <a href="mywork.html">My work</a>
+            <a href="contact.html">Contact</a>
+
+
+    </header>
+    <div class="videodiv">
+        <video width="" height="250" controls class="video" poster="/bilder/im6.jpg">
+            <source src="/bilder/filmenommegp.mp4" type="video/mp4">
+            <source src="/bilder/filmenommegp.mp4" type="video/ogg">
+
+        </video>
+    </div>
+
+    <div class="midttekst">
+    <p >Hello, my name is Benjamin Bring Mohn. I am a 16-year-old student that currently attends Kuben
+        upper secondary school and am studying Information technology and media production subject. <br><br>
+
+        Mostly of my life have I always had a passion for gaming and that has led me to want to learn and studying Coding and development.
+        When I am not at school, I like to Work out, and playing games. When your job is mostly just sitting it is
+        Healty to train to keep up a good health.</p>
+    </div>
+
+    <button id="toggleDyslexic" style="position: absolute; top: 10px; left: 10px;">Normal</button>
+    <script src="toggleDyslexic.js"></script>
+    <script>
+        const button = document.getElementById('toggleDyslexic');
+        button.addEventListener('click', () => {
+            document.body.classList.toggle('dyslexic');
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>

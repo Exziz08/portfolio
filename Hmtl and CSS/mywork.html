@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="mywork.css">
+  <title>My work</title>
+
+</head>
+
+<body>
+
+
+  <div class="bakrunnbilde" >
+    
+  </div>
+  
+
+  <header>
+    <a href="index.html" class="logo">Benjamin</a>
+
+    <nav>
+      <a href="index.html" >Home</a>
+      <a href="aboutme.html">About me</a>
+      <a href="mywork.html" class="active">My work</a>
+      <a href="contact.html">Contact</a>
+
+
+
+    </nav>
+
+
+  </header>
+
+  <div class="tekst">
+    <h1>This is projects that i have done</h1>
+  </div>
+  <div class="container">
+    <div class="picture-row">
+        <img class="bilde" src="/bilder/megien22.png" alt="">
+        <img class="bilde" src="/bilder/annonse.png" alt="">
+       
+    </div>
+
+
+      <img class="bilde stor" src="/bilder/la crosse 2.png" alt="">
+
+
+
+  </div>
+
+  <button id="toggleDyslexic" style="position: absolute; top: 10px; left: 10px;">Normal</button>    
+    <script src="toggleDyslexic.js"></script>
+<script>
+                const button = document.getElementById('toggleDyslexic');
+                button.addEventListener('click', () => {
+                    document.body.classList.toggle('dyslexic');
+                });
+            </script>
+
+</body>
+
+</html>
