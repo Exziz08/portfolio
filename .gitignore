@@ -1,1 +1,19 @@
-*.mp4
+
+# Node.js-dependencies (hvis du bruker npm eller yarn)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Bygg- og distribusjonsmapper
+dist/
+build/
+
+# Midlertidige filer og OS-spesifikke filer
+.DS_Store
+Thumbs.db
+
+# IDE-filer
+.vscode/
+.idea/
+*.swp
+*.swo
