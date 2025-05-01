@@ -2,108 +2,95 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="mywork.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="mywork.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <title>My work</title>
-  <base href="/">
-
-
 </head>
 
 <body>
 
-
-  <div class="bakrunnbilde" >
-    
-  </div>
-  
-
   <header>
     <a href="../index.html" class="logo">Benjamin</a>
-
     <nav>
-      <a href="../index.html" >Home</a>
+      <a href="../index.html">Home</a>
       <a href="./aboutme.html">About me</a>
       <a href="./mywork.html" class="active">My work</a>
       <a href="./contact.html">Contact</a>
-
-
-
     </nav>
-
-
   </header>
 
   <div class="tekst">
-    <h1 >Here you can see some of my work, but if you’d like to see more of it — including the code — feel free to check out my GitHub, which is linked on the homepage</h1>
+    <h1>Here you can see some of my work, but if you’d like to see more of it — including the code — feel free to check out my GitHub, which is linked on the homepage.</h1>
   </div>
-  <div class="container">
 
+  <div class="container">
     <div class="media-wrapper">
-      <img class="bilde" src="bilder/megien22.png" alt="Design work 1">
+      <img class="media" src="../bilder/megien22.png" alt="Design work 1" />
       <p class="mediabesk">Et moderne design laget for en kampanje med fokus på stilrent uttrykk.</p>
     </div>
-  
+
     <div class="media-wrapper">
-      <img class="bilde" src="bilder/annonse.png" alt="Ad design">
+      <img class="media" src="../bilder/annonse.png" alt="Ad design" />
       <p class="mediabesk">En annonse laget for SoMe med fokus på responsiv layout og branding.</p>
     </div>
-  
+
     <div class="media-wrapper">
-      <img class="bilde" src="bilder/work4.png" alt="Work 4">
+      <img class="media" src="../bilder/work4.png" alt="Work 4" />
       <p class="mediabesk">Visuell identitet for et lokalt arrangement.</p>
     </div>
-  
+
     <div class="media-wrapper">
-      <img class="bilde" src="bilder/work5.png" alt="Work 5">
+      <img class="media" src="../bilder/work5.png" alt="Work 5" />
       <p class="mediabesk">Illustrasjon laget i Procreate for et personlig prosjekt.</p>
     </div>
-  
+
     <div class="media-wrapper">
-      <img class="bilde" src="bilder/work6.png" alt="Work 6">
+      <img class="media" src="../bilder/work6.png" alt="Work 6" />
       <p class="mediabesk">Mockup for en nettside designet i Figma.</p>
     </div>
-  
+
     <div class="media-wrapper">
-      <img class="bilde stor" src="bilder/la crosse 2.png" alt="Featured work">
+      <img class="media" src="../bilder/la crosse 2.png" alt="Featured work" />
       <p class="mediabesk">Et større prosjekt med full branding og design for en sportsforening.</p>
     </div>
-  
+
     <div class="media-wrapper">
-      <img class="bilde stor" src="bilder/årsoppgaven.png" alt="Årsoppgave">
+      <img class="media" src="../bilder/årsoppgaven.png" alt="Årsoppgave" />
       <p class="mediabesk">Min årsoppgave – et dyptgående designprosjekt med presentasjon og dokumentasjon.</p>
     </div>
-  
+
     <div class="media-wrapper">
-      <img class="bilde stor" src="bilder/stemmeteller.png" alt="Stemmeteller">
+      <img class="media" src="../bilder/stemmeteller.png" alt="Stemmeteller" />
       <p class="mediabesk">Et interaktivt nettsideprosjekt der man kan stemme og se resultater.</p>
     </div>
-  
+
     <div class="media-wrapper">
-      <video class="video" controls>
-        <source src="bilder/Benjamin_fuglefilm.mp4" type="video/mp4">
+      <video class="media" controls>
+        <source src="../bilder/Benjamin_fuglefilm.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <p class="mediabesk">En dokumentarfilm jeg lagde om fugleliv i nærområdet. Jeg stod for alt fra filming til redigering.</p>
     </div>
-  
-    
   </div>
-  
-  
 
-  <button id="toggleDyslexic" style="position: absolute; top: 10px; left: 10px;">Normal</button>    
-    <script src="toggleDyslexic.js"></script>
-<script>
-                const button = document.getElementById('toggleDyslexic');
-                button.addEventListener('click', () => {
-                    document.body.classList.toggle('dyslexic');
-                });
-            </script>
+  <button id="toggleDyslexic" style="position: absolute; top: 10px; left: 10px;">Dyslexic</button>
+  <script src="toggleDyslexic.js"></script>
+  <script>
+const button = document.getElementById('toggleDyslexic');
+button.addEventListener('click', () => {
+  document.body.classList.toggle('dyslexic');
 
-            
+  if (document.body.classList.contains('dyslexic')) {
+    button.textContent = 'Normal'; 
+  } else {
+    button.textContent = 'Dyslexic mode';
+  }
+});
+
+
+  </script>
 
 </body>
 
